@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"compiler/repl"
+	"os"
 )
 
 func main()  {
