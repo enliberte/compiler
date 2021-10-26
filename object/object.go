@@ -10,6 +10,7 @@ type ObjectType string
 const (
 	INTEGER_OBJ = "INTEGER"
 	BOOLEAN_OBJ = "BOOLEAN"
+	RETURN_VALUE_OBJ = "RETURN_VALUE"
 	NULL_OBJ
 )
 
@@ -57,4 +58,17 @@ func (n *Null) Inspect() string {
 
 func (n *Null) Type() ObjectType {
 	return NULL_OBJ
+}
+
+//RETURN VALUE
+type ReturnValue struct {
+	Value Object
+}
+
+func (rv *ReturnValue) Inspect() string {
+	return rv.Value.Inspect()
+}
+
+func (rv *ReturnValue) Type() ObjectType {
+	return RETURN_VALUE_OBJ
 }
