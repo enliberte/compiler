@@ -178,6 +178,22 @@ func (il *IntegerLiteral) String() string {
 	return il.Token.Literal
 }
 
+//STRING
+type StringLiteral struct {
+	Token token.Token //INT
+	Value string
+}
+
+func (sl *StringLiteral) expressionNode() {}
+
+func (sl *StringLiteral) TokenLiteral() string {
+	return sl.Token.Literal
+}
+
+func (sl *StringLiteral) String() string {
+	return sl.Token.Literal
+}
+
 //BOOLEAN
 type Boolean struct {
 	Token token.Token
