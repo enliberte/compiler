@@ -14,6 +14,7 @@ const (
 	INTEGER_OBJ = "INTEGER"
 	STRING_OBJ = "STRING"
 	BOOLEAN_OBJ = "BOOLEAN"
+	ARRAY_OBJ = "ARRAY"
 	FUNCTION_OBJ = "FUNCTION"
 	BUILTIN_OBJ = "BUILTIN"
 	RETURN_VALUE_OBJ = "RETURN_VALUE"
@@ -68,6 +69,8 @@ func (b *Boolean) Inspect() string {
 func (b *Boolean) Type() ObjectType {
 	return BOOLEAN_OBJ
 }
+
+//ARRAY
 
 
 //NULL
