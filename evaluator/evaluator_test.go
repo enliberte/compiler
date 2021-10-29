@@ -331,7 +331,7 @@ func TestErrorHandling(t *testing.T) {
 
 		errObj, ok := evaluated.(*object.Error)
 		if !ok {
-			t.Errorf("no error object returned. got=%T(%+v", evaluated, evaluated)
+			t.Errorf("no error object returned. got=%T(%+v)", evaluated, evaluated)
 			continue
 		}
 
