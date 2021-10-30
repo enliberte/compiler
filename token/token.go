@@ -13,6 +13,7 @@ const (
 
 	IDENT = "IDENT"
 	INT = "INT"
+	STRING = "STRING"
 
 	ASSIGN = "="
 	PLUS = "+"
@@ -32,6 +33,9 @@ const (
 	RPAREN = "}"
 	LBRACE = "("
 	RBRACE = ")"
+	LBRACKET = "["
+	RBRACKET = "]"
+	COLON = ":"
 
 	FUNCTION = "FUNCTION"
 	LET = "LET"
