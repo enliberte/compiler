@@ -7,8 +7,8 @@ import (
 	"compiler/parser"
 	"fmt"
 	"io"
-	"os"
 	"io/ioutil"
+	"os"
 )
 
 func main()  {
