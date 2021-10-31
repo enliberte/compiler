@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-31T15:21:44.293Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="_MTNAjSJ2rCUgBOy9yew" version="15.6.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-31T15:40:57.316Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="uyTZpZYbZwuyGiE6tN7V" version="15.6.3" type="github">
   <diagram id="4AThORxVZcJ4zeDrusvJ" name="Page-1">
     <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -17,10 +17,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="20" width="770" height="510" as="geometry" />
+          <mxGeometry x="150" y="20" width="350" height="500" as="geometry" />
         </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-6" value="Lexer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="160" y="30" width="150" height="230" as="geometry" />
+          <mxGeometry x="160" y="100" width="150" height="350" as="geometry" />
         </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-7" value="+ input: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
           <mxGeometry y="26" width="150" height="26" as="geometry" />
@@ -40,25 +40,37 @@
         <mxCell id="o_SGnGbDhmQAraUmnpOO-9" value="+ NextToken(): Token" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
           <mxGeometry y="140" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="o_SGnGbDhmQAraUmnpOO-38" value="+ readChar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
+        <mxCell id="o_SGnGbDhmQAraUmnpOO-37" value="+ peekChar(): byte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
           <mxGeometry y="170" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="o_SGnGbDhmQAraUmnpOO-37" value="+ peekChar(): byte" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
+        <mxCell id="o_SGnGbDhmQAraUmnpOO-42" value="+ skipWhitespaces(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
           <mxGeometry y="200" width="150" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="o_SGnGbDhmQAraUmnpOO-38" value="+ readChar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
+          <mxGeometry y="230" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_SGnGbDhmQAraUmnpOO-39" value="+ readIdentifier(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
+          <mxGeometry y="260" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_SGnGbDhmQAraUmnpOO-40" value="+ readNumber(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
+          <mxGeometry y="290" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_SGnGbDhmQAraUmnpOO-41" value="+ readString(): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-6">
+          <mxGeometry y="320" width="150" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-13" value="Token" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="320" y="30" width="150" height="78" as="geometry">
+          <mxGeometry x="320" y="30" width="170" height="78" as="geometry">
             <mxRectangle x="320" y="108" width="150" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-14" value="+ Type: TokenType" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-13">
-          <mxGeometry y="26" width="150" height="26" as="geometry" />
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
         </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-15" value="+ Literal: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-13">
-          <mxGeometry y="52" width="150" height="26" as="geometry" />
+          <mxGeometry y="52" width="170" height="26" as="geometry" />
         </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-33" value="TokenType" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="480" y="30" width="170" height="387" as="geometry" />
+          <mxGeometry x="320" y="120" width="170" height="387" as="geometry" />
         </mxCell>
         <mxCell id="o_SGnGbDhmQAraUmnpOO-32" value="&lt;ul style=&quot;line-height: 0.9&quot;&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;ILLEGAL = &quot;ILLEGAL&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;EOF = &quot;EOF&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;IDENT = &quot;IDENT&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;INT = &quot;INT&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;STRING = &quot;STRING&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;ASSIGN = &quot;=&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;PLUS = &quot;+&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;MINUS = &quot;-&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;BANG = &quot;!&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;ASTERISK = &quot;*&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;SLASH = &quot;/&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;LT = &quot;&amp;lt;&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;GT = &quot;&amp;gt;&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;EQ = &quot;==&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;NOT_EQ = &quot;!=&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;COMMA = &quot;,&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;SEMICOLON = &quot;;&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;LPAREN = &quot;{&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;RPAREN = &quot;}&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;LBRACE = &quot;(&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;RBRACE = &quot;)&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;LBRACKET = &quot;[&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;RBRACKET = &quot;]&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;COLON = &quot;:&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;FUNCTION = &quot;FUNCTION&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;LET = &quot;LET&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;TRUE = &quot;TRUE&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;FALSE = &quot;FALSE&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;IF = &quot;IF&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;ELSE = &quot;ELSE&quot;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 10px&quot;&gt;RETURN = &quot;RETURN&quot;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="o_SGnGbDhmQAraUmnpOO-33">
           <mxGeometry y="26" width="170" height="361" as="geometry" />
